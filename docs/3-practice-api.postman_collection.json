@@ -1,0 +1,1544 @@
+{
+	"info": {
+		"_postman_id": "ee17eeda-3b52-42e1-9f8f-bad6d1b9e046",
+		"name": "3-practice-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "practices",
+			"item": [
+				{
+					"name": "practices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Vtlbnfwbz\",\r\n  \"description\": null,\r\n  \"price\": 10000,\r\n  \"discount\": null,\r\n  \"practiceAccess\": true,\r\n  \"authorId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"practiceCategoryId\": \"b45413b7-91c8-4121-98db-a83ee0977ff4\",\r\n  \"practiceLanguageId\": \"9ce6a03c-b62d-42f2-a906-155b5304ac20\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practices",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practices/3f68e450-5071-40a5-8440-d1472f41a76f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practices",
+								"3f68e450-5071-40a5-8440-d1472f41a76f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practices",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Медитация\",\r\n  \"description\": null,\r\n  \"price\": 10000,\r\n  \"discount\": null,\r\n  \"practiceAccess\": true,\r\n  \"authorId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"practiceCategoryId\": \"b45413b7-91c8-4121-98db-a83ee0977ff4\",\r\n  \"practiceLanguageId\": \"9ce6a03c-b62d-42f2-a906-155b5304ac20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practices/ce52422f-61e2-42e3-b368-f0736d099e01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practices",
+								"ce52422f-61e2-42e3-b368-f0736d099e01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practices/c25322c1-438c-4fb6-b1ec-af7274326313",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practices",
+								"c25322c1-438c-4fb6-b1ec-af7274326313"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "customers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"author\",\r\n  \"firstName\": \"Анна\",\r\n  \"lastName\": \"Верхоланцева\",\r\n  \"phone\": \"+7-982-442-00-68\",\r\n  \"email\": \"verkholantsevad@gmail.com\",\r\n  \"authorDescription\": \"Описание автора\",\r\n  \"birthDate\": \"1992-03-01\",\r\n  \"userId\": \"1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers/0268224d-7ff9-447c-bd41-43905eff490e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"0268224d-7ff9-447c-bd41-43905eff490e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"author\",\r\n    \"firstName\": \"Антон\",\r\n    \"lastName\": \"Верхоланцев\",\r\n    \"phone\": \"+7-982-442-00-68\",\r\n    \"email\": \"verkholantsevad@gmail.com\",\r\n    \"authorDescription\": \"Описание автора\",\r\n    \"birthDate\": \"1992-02-29T19:00:00.000Z\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customers/96351aed-b015-4675-ba0e-96bcbc5c1083",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"96351aed-b015-4675-ba0e-96bcbc5c1083"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customers/96351aed-b015-4675-ba0e-96bcbc5c1083",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"96351aed-b015-4675-ba0e-96bcbc5c1083"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "order-statuses",
+			"item": [
+				{
+					"name": "order-status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Выполнен\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-statuses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-statuses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-status",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-statuses/e1dc5b9f-aee8-439d-81cc-fe0dd9f03fd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-statuses",
+								"e1dc5b9f-aee8-439d-81cc-fe0dd9f03fd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Выполнен\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-statuses/e1dc5b9f-aee8-439d-81cc-fe0dd9f03fd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-statuses",
+								"e1dc5b9f-aee8-439d-81cc-fe0dd9f03fd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-statuses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/order-statuses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-statuses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/order-statuses/950cd917-48f8-48ca-a559-ce60ebd0a07b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-statuses",
+								"950cd917-48f8-48ca-a559-ce60ebd0a07b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isShoppingCart\": true,\r\n  \"purchaseDate\": null,\r\n  \"customerId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"orderStatusId\": \"950cd917-48f8-48ca-a559-ce60ebd0a07b\",\r\n  \"paymentMethodId\": \"1086ccb5-8f6f-4fed-b382-af220aadfc33\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/orders/e9d76e76-7dc4-4369-acf3-bee191e90282",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"orders",
+								"e9d76e76-7dc4-4369-acf3-bee191e90282"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isShoppingCart\": false,\r\n  \"purchaseDate\": \"2020-08-27T04:44:13.593Z\",\r\n  \"customerId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"orderStatusId\": \"950cd917-48f8-48ca-a559-ce60ebd0a07b\",\r\n  \"paymentMethodId\": \"1086ccb5-8f6f-4fed-b382-af220aadfc33\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/orders/7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"orders",
+								"7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/orders/7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"orders",
+								"7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "files",
+			"item": [
+				{
+					"name": "files",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/C:/Users/verkh/Pictures/1405924356-04228300.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/files",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"files"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "files",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"f2343103ace77b0beb863860c271695c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/files/2ed631fc-de0c-443f-a57f-4e2a76a3d4cf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"files",
+								"2ed631fc-de0c-443f-a57f-4e2a76a3d4cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "files",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/C:/Users/verkh/Pictures/1405924356-04228300.jpg"
+								},
+								{
+									"key": "name",
+									"value": "666e402737b6b7452c69290267686873",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/files/2ed631fc-de0c-443f-a57f-4e2a76a3d4cf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"files",
+								"2ed631fc-de0c-443f-a57f-4e2a76a3d4cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "file",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/files/fb878444-c329-4dd8-b46b-ba45e3cd8463",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"files",
+								"fb878444-c329-4dd8-b46b-ba45e3cd8463"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "payment-methods",
+			"item": [
+				{
+					"name": "payment-methods",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Paypal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/payment-methods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment-methods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment-methods",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/payment-methods/4a663812-e8a5-4cf6-8fb1-bd26c23a20d3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment-methods",
+								"4a663812-e8a5-4cf6-8fb1-bd26c23a20d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment-methods",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Тест3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/payment-methods/4a663812-e8a5-4cf6-8fb1-bd26c23a20d3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment-methods",
+								"4a663812-e8a5-4cf6-8fb1-bd26c23a20d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment-methods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/payment-methods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment-methods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment-method",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/payment-methods/1086ccb5-8f6f-4fed-b382-af220aadfc33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"payment-methods",
+								"1086ccb5-8f6f-4fed-b382-af220aadfc33"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "practice-categories",
+			"item": [
+				{
+					"name": "practice-categories hierarchy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Психосоматика\",\r\n    \"parentId\": \"b45413b7-91c8-4121-98db-a83ee0977ff4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Работа тест 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-categories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-categories/3008778c-7fa8-4f9f-bcdc-3bc434bf1028",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories",
+								"3008778c-7fa8-4f9f-bcdc-3bc434bf1028"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-categories",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Тест3\",\r\n    \"parentId\": \"3008778c-7fa8-4f9f-bcdc-3bc434bf1028\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-categories/fb3e7a7f-44d1-42ef-84a8-ec2ba2cb4bfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories",
+								"fb3e7a7f-44d1-42ef-84a8-ec2ba2cb4bfa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-categoriy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-categories/fb3e7a7f-44d1-42ef-84a8-ec2ba2cb4bfa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-categories",
+								"fb3e7a7f-44d1-42ef-84a8-ec2ba2cb4bfa"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "practice-languages",
+			"item": [
+				{
+					"name": "practice-languages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Русский\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-languages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-languages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-languages",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Тест3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-languages/e0192474-18ab-4079-a572-abc94daf55e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-languages",
+								"e0192474-18ab-4079-a572-abc94daf55e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-languages",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-languages/e0192474-18ab-4079-a572-abc94daf55e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-languages",
+								"e0192474-18ab-4079-a572-abc94daf55e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-languages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-languages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-languages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-language",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-languages/9ce6a03c-b62d-42f2-a906-155b5304ac20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-languages",
+								"9ce6a03c-b62d-42f2-a906-155b5304ac20"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "order-practices",
+			"item": [
+				{
+					"name": "order-practices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"finalPrice\": 43000,\r\n  \"orderId\": \"7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2\",\r\n  \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-practices",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-practices/d6027670-24e9-405e-a5e7-3fdd1ce3fb34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices",
+								"d6027670-24e9-405e-a5e7-3fdd1ce3fb34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-practices",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"finalPrice\": 54000,\r\n  \"orderId\": \"7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2\",\r\n  \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order-practices/a2a7b6c0-b1f8-40c3-a529-41bbcef07cb1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices",
+								"a2a7b6c0-b1f8-40c3-a529-41bbcef07cb1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-practices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/order-practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-practice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/order-practices/a2a7b6c0-b1f8-40c3-a529-41bbcef07cb1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices",
+								"a2a7b6c0-b1f8-40c3-a529-41bbcef07cb1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-practices-by-order-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/order-practices-by-order-id/7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order-practices-by-order-id",
+								"7fc3c9e6-fc45-43ee-8b9e-0d75adf28ef2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "customer-practices",
+			"item": [
+				{
+					"name": "customer-practices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isWhishItem\": false,\r\n  \"customerId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customer-practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer-practices",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customer-practices/9f8d1963-6eb1-4c69-b665-819474f21b9c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices",
+								"9f8d1963-6eb1-4c69-b665-819474f21b9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer-practices",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isWhishItem\": true,\r\n  \"customerId\": \"96351aed-b015-4675-ba0e-96bcbc5c1083\",\r\n  \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/customer-practices/9f8d1963-6eb1-4c69-b665-819474f21b9c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices",
+								"9f8d1963-6eb1-4c69-b665-819474f21b9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer-practices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customer-practices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer-practice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customer-practices/9100fef8-35a1-4928-8e2d-5e9f33118261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices",
+								"9100fef8-35a1-4928-8e2d-5e9f33118261"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer-practices-by-customer-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/customer-practices-by-customer-id/96351aed-b015-4675-ba0e-96bcbc5c1083",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customer-practices-by-customer-id",
+								"96351aed-b015-4675-ba0e-96bcbc5c1083"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "practice-steps",
+			"item": [
+				{
+					"name": "practice-steps",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Хатха йога - день 1\",\r\n    \"description\": \"Занятие хатха йогой\",\r\n    \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\",\r\n    \"fileId\": \"fb878444-c329-4dd8-b46b-ba45e3cd8463\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-steps",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-steps",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Архив\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-steps/cf861c0b-cdc2-484a-9258-6b3953a81e29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps",
+								"cf861c0b-cdc2-484a-9258-6b3953a81e29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-steps",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Хатха йога - день 2\",\r\n    \"description\": \"Занятие хатха йогой\",\r\n    \"practiceId\": \"ce52422f-61e2-42e3-b368-f0736d099e01\",\r\n    \"fileId\": \"fb878444-c329-4dd8-b46b-ba45e3cd8463\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/practice-steps/cf861c0b-cdc2-484a-9258-6b3953a81e29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps",
+								"cf861c0b-cdc2-484a-9258-6b3953a81e29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-steps",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-steps",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-step",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-steps/2bfee0fd-81f9-4b9f-aba1-28595d9e1dfb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps",
+								"2bfee0fd-81f9-4b9f-aba1-28595d9e1dfb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "practice-steps-by-practice-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/practice-steps-by-practice-id/ce52422f-61e2-42e3-b368-f0736d099e01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"practice-steps-by-practice-id",
+								"ce52422f-61e2-42e3-b368-f0736d099e01"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

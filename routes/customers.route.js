@@ -1,9 +1,10 @@
+const router = require("express").Router();
 const { customersController } = require("../controllers");
 
-exports.routesConfig = function (app) {
-  app.get("/customers", customersController.getAllCustomers);
-  app.get("/customers/:id", customersController.getOneCustomer);
-  app.post("/customers", customersController.postCustomer);
-  app.put("/customers/:id", customersController.updateCustomer);
-  app.delete("/customers/:id", customersController.deleteCustomer);
-};
+router.get("/customers", customersController.getAllCustomers);
+router.get("/customers/:id", customersController.getOneCustomer);
+router.post("/customers", customersController.postCustomer);
+router.put("/customers/:id", customersController.updateCustomer);
+router.delete("/customers/:id", customersController.deleteCustomer);
+
+module.exports = router;

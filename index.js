@@ -1,37 +1,23 @@
 const express = require("express");
-const multer = require("multer");
-const app = express();
-const {
-  OrderStatusesRouter,
-  PaymentMethodsRouter,
-  PracticeLanguagesRouter,
-  PracticeCategoriesRouter,
-  CustomersRouter,
-  PracticesRouter,
-  OrdersRouter,
-  OrderPracticesRouter,
-  CustomerPracticesRouter,
-  FilesRouter,
-  PracticeStepsRouter,
-} = require("./routes");
+const passport = require("passport");
+
+const AuthRouter = require("./auth/auth.route");
+const SecureRoutes = require("./routes");
 
 const PORT = 5000;
+const app = express();
 
 app.use(express.json()); // Read body
-let upload = multer({ dest: "src/uploads" }).single("attachment"); // Upload files
 
 // ROUTES //
-OrderStatusesRouter.routesConfig(app);
-PaymentMethodsRouter.routesConfig(app);
-PracticeLanguagesRouter.routesConfig(app);
-PracticeCategoriesRouter.routesConfig(app);
-CustomersRouter.routesConfig(app);
-PracticesRouter.routesConfig(app);
-OrdersRouter.routesConfig(app);
-OrderPracticesRouter.routesConfig(app);
-CustomerPracticesRouter.routesConfig(app);
-FilesRouter.routesConfig(app, upload);
-PracticeStepsRouter.routesConfig(app, upload);
+app.use("/auth", passport.authenticate("jwt", { session: false }), SecureRoutes);
+AuthRouter.routesConfig(app);
+
+// Error handler
+app.use(function (err, req, res, next) {
+  res.status(err.status || 500);
+  res.json({ error: err });
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

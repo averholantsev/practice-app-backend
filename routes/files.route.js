@@ -1,9 +1,13 @@
+const router = require("express").Router();
+const multer = require("multer");
 const { filesController } = require("../controllers");
 
-exports.routesConfig = function (app, middleware) {
-  //app.get("/files", filesController.getAllFiles);
-  app.get("/files/:id", filesController.getOneFile);
-  app.post("/files", middleware, filesController.postFile);
-  app.put("/files/:id", middleware, filesController.updateFile);
-  app.delete("/files/:id", filesController.deleteFile);
-};
+let upload = multer({ dest: "src/uploads" }).single("attachment"); // Upload files
+
+//router.get("/files", filesController.getAllFiles);
+router.get("/files/:id", filesController.getOneFile);
+router.post("/files", upload, filesController.postFile);
+router.put("/files/:id", upload, filesController.updateFile);
+router.delete("/files/:id", filesController.deleteFile);
+
+module.exports = router;

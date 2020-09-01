@@ -1,9 +1,10 @@
+const router = require("express").Router();
 const { orderStatusesController } = require("../controllers");
 
-exports.routesConfig = function (app) {
-  app.get("/order-statuses", orderStatusesController.getAllOrderStatuses);
-  app.get("/order-statuses/:id", orderStatusesController.getOneOrderStatus);
-  app.post("/order-statuses", orderStatusesController.postOrderStatus);
-  app.put("/order-statuses/:id", orderStatusesController.updateOrderStatus);
-  app.delete("/order-statuses/:id", orderStatusesController.deleteOrderStatus);
-};
+router.get("/order-statuses", orderStatusesController.getAllOrderStatuses);
+router.get("/order-statuses/:id", orderStatusesController.getOneOrderStatus);
+router.post("/order-statuses", orderStatusesController.postOrderStatus);
+router.put("/order-statuses/:id", orderStatusesController.updateOrderStatus);
+router.delete("/order-statuses/:id", orderStatusesController.deleteOrderStatus);
+
+module.exports = router;

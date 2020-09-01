@@ -1,6 +1,6 @@
 const pool = require("../db");
 const fs = require("fs");
-const { selectFiles, selectFileById } = require("./utilities");
+const { /* selectFiles, */ selectFileById } = require("./utilities");
 const FILES_PUTH = "D:\\Web\\practice-app-backend\\src\\uploads\\";
 
 /* // get all Files

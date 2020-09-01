@@ -13,9 +13,9 @@ CREATE TABLE "public"."Files" (
 
 -- ************************************** "public"."Users"
 CREATE TABLE "public"."Users" (
-  "id" integer NOT NULL,
-  "login" varchar(50) NOT NULL,
-  "password" varchar(50) NOT NULL,
+  "id" uuid NOT NULL,
+  "email" varchar(50) NOT NULL,
+  "password" varchar(100) NOT NULL,
   "createdAt" timestamp NOT NULL,
   "updatedAt" timestamp NULL,
   CONSTRAINT "PK_users" PRIMARY KEY ("id")
@@ -59,7 +59,7 @@ CREATE TABLE "public"."PracticeCategories" (
   CONSTRAINT "FK_64" FOREIGN KEY ("parentId") REFERENCES "public"."PracticeCategories" ("id")
 );
 
-CREATE INDEX "fkIdx_64" ON "public"."PracticeCategories" ("ParentId");
+CREATE INDEX "fkIdx_64" ON "public"."PracticeCategories" ("parentId");
 
 -- ОСНОВНЫЕ ТАБЛИЦЫ
 -- ************************************** "public"."Customers"
@@ -74,7 +74,7 @@ CREATE TABLE "public"."Customers" (
   "birthDate" date NULL,
   "createdAt" timestamp NOT NULL,
   "updatedAt" timestamp NULL,
-  "userId" integer NOT NULL,
+  "userId" uuid NOT NULL,
   CONSTRAINT "PK_user" PRIMARY KEY ("id"),
   CONSTRAINT "FK_121" FOREIGN KEY ("userId") REFERENCES "public"."Users" ("id")
 );

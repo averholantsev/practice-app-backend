@@ -1,9 +1,10 @@
+const router = require("express").Router();
 const { practicesController } = require("../controllers");
 
-exports.routesConfig = function (app) {
-  app.get("/practices", practicesController.getAllPractices);
-  app.get("/practices/:id", practicesController.getOnePractice);
-  app.post("/practices", practicesController.postPractice);
-  app.put("/practices/:id", practicesController.updatePractice);
-  app.delete("/practices/:id", practicesController.deletePractice);
-};
+router.get("/practices", practicesController.getAllPractices);
+router.get("/practices/:id", practicesController.getOnePractice);
+router.post("/practices", practicesController.postPractice);
+router.put("/practices/:id", practicesController.updatePractice);
+router.delete("/practices/:id", practicesController.deletePractice);
+
+module.exports = router;

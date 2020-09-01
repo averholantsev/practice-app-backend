@@ -1,10 +1,29 @@
+const router = require("express").Router();
 const { customerPracticesController } = require("../controllers");
 
-exports.routesConfig = function (app) {
-  app.get("/customer-practices", customerPracticesController.getAllCustomerPractices);
-  app.get("/customer-practices-by-customer-id/:id", customerPracticesController.getAllCustomerPracticesByCustomerId);
-  app.get("/customer-practices/:id", customerPracticesController.getOneCustomerPractice);
-  app.post("/customer-practices", customerPracticesController.postCustomerPractice);
-  app.put("/customer-practices/:id", customerPracticesController.updateCustomerPractice);
-  app.delete("/customer-practices/:id", customerPracticesController.deleteCustomerPractice);
-};
+router.get(
+  "/customer-practices",
+  customerPracticesController.getAllCustomerPractices
+);
+router.get(
+  "/customer-practices-by-customer-id/:id",
+  customerPracticesController.getAllCustomerPracticesByCustomerId
+);
+router.get(
+  "/customer-practices/:id",
+  customerPracticesController.getOneCustomerPractice
+);
+router.post(
+  "/customer-practices",
+  customerPracticesController.postCustomerPractice
+);
+router.put(
+  "/customer-practices/:id",
+  customerPracticesController.updateCustomerPractice
+);
+router.delete(
+  "/customer-practices/:id",
+  customerPracticesController.deleteCustomerPractice
+);
+
+module.exports = router;
